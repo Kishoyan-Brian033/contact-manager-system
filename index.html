@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+    <header>
+        <h2>Contact Manager</h2>
+        <div class="icons">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <ion-icon name="apps-outline"></ion-icon>
+        </div>
+    </header>
+
+    <div class="container">
+        <label for="Contact">Create a New Contact:</label>
+        <button id="btn">Create <ion-icon name="add-outline"></ion-icon></button>
+    </div>
+
+    <div class="form-container hidden">
+    <form action="" class="form">
+        <div class="names">
+        <label for="username">Enter Username:</label>
+        <input type="text" name="name" id="username" required>
+        </div>
+         
+        <div class="phone_number">
+        <label for="phone_number">Enter phone number:</label>
+        <input type="text" name="phone" id="phone_number" maxlength="12" required>
+        </div>
+         
+        <div class="email">
+        <label for="email">Enter User email:</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <div class="contact-list"></div>
+   </div>
+
+<script src="./dist/app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
